@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
 @media screen and (max-width: 481px){
-    .withLove {
-        visibility: hidden;
-    }
+
 }
 
 body {
@@ -12,15 +10,30 @@ body {
 .center {
     text-align: center;
 }
-.float-right {
-    float: right;
+
+.no-wrap {
+    word-wrap: none;
 }
 .headSentence {
     font-weight: bold;
 }
+.poem-container {
+    width: 50%;
+    height: 50%;
+    left: calc(50% -1em);
+    right: calc(50% -1em);
+    top: 50%;
+    bottom: 50%;
+
+    padding: 2em;
+    margin: 0 auto;
+    border: black solid 2px;
+    border-radius: 10%;
+    font-size: 90%;
+    text-align: center;
+}
 .poem {
     font-weight: 500;
-    font-size: 50px;
 }
 footer {
     position: fixed;
