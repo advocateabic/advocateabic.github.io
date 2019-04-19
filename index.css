@@ -18,7 +18,7 @@ body {
     font-weight: bold;
 }
 .poem-container {
-    width: 50%;
+    width: 55%;
     height: 50%;
     left: calc(50% -1em);
     right: calc(50% -1em);
