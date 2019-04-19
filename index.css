@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
 @media screen and (max-width: 481px){
-
+    .withLove {
+        visibility: hidden;
+    }
 }
 
 body {
@@ -25,7 +27,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     border-top: solid black 3px;
     padding: .4%;
 }
