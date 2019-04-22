@@ -1,21 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
-@media screen and (max-width: 481px){
-
+@media screen and (max-width: 450px){
+    body {
+        font-size: 70% !important;
+    }
+    .navigationButton {
+        width: 1em;
+    }
 }
 
 body {
     font-family: 'Rubik', sans-serif;
+    /*background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
+    background-blend-mode: color-dodge; */
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0;
+    height: 100%;
+    width: 100%;
+
 }
 header {
-    border-bottom: 2px solid black;
+    text-align: center;
     width: 100vw;
     left:0;
     right:0;
     margin:0 auto;
     top:0;
 
-    height: 10%;
+    height: 20%;
+}
+.navigation {
+    text-align: center;
+    color: white;
+    width: 100%;
+    
+}
+.navigationButton {
+    text-decoration: none;
+    border: 2px solid black;
+    background: transparent;
+    padding: 1.01em;
+    border-radius: 1em;
+    color: white;
+    width: 14%;
+    font-size: 1em;
 }
 .center {
     text-align: center;
@@ -28,7 +60,7 @@ header {
     font-weight: bold;
 }
 .poem-container {
-    width: 25%;
+    width: 40%;
     height: 50%;
     left: calc(50% -1em);
     right: calc(50% -1em);
@@ -37,7 +69,7 @@ header {
 
     padding: 2em;
     margin: 0 auto;
-    margin-bottom: 600em;
+
     border: black solid 2px;
     border-radius: 10%;
     font-size: 90%;
