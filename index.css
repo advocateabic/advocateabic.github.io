@@ -14,10 +14,10 @@ body {
     /*background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1);
     background-blend-mode: color-dodge; */
-    background-color: #8BC6EC;
+    /* background-color: #8BC6EC;
     background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     margin:0;
     height: 100%;
     width: 100%;
@@ -37,7 +37,7 @@ header {
     text-align: center;
     color: white;
     width: 100%;
-    
+
 }
 .navigationButton {
     text-decoration: none;
