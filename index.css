@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 
-@media screen and (max-width: 450px){
+@media screen and (min-width: 450px){
     body {
         font-size: 70% !important;
     }
-    .navigationButton {
-        width: 1em;
-    }
+    
 }
 
 body {
@@ -46,7 +44,7 @@ header {
     padding: 1.01em;
     border-radius: 1em;
     color: white;
-    width: 14%;
+    width: fit-content%;
     font-size: 1em;
 }
 .center {
