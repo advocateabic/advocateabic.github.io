@@ -32,12 +32,12 @@ header {
 footer {
     position: absolute;
     bottom: 0;
-    width: 100%;
+    width: 100vh;
     padding: 2rem;
     border-top: 2px black solid;
 }
 .socialButtons {
-    width: 100%;
+    width: 100vh;
     text-align: center;
 }
 .fa {
