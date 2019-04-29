@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik');
-@media screen and (min-width: 450px){
-    
+@media screen and (max-width: 450px){
+    img {
+        width: 40px;
+        height: 40px;
+    }
 }
 body {
     display: grid;
@@ -24,6 +27,14 @@ body {
 .noWrap {
     word-wrap: none;
 }
+.headerImg {
+    text-align: center;
+    margin: .00001em;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
 header {
     top: 0;
     width: 100%;
@@ -33,21 +44,18 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 2rem;
     border-top: 2px black solid;
 }
 .socialButtons {
-    width: 100%;
     text-align: center;
 }
-.fa {
-    font-size: 3em;
-}
+
 .fa-instagram {
     background: -webkit-linear-gradient(200deg, #d047d1, #ff0000,#ffff00);
     -webkit-background-clip: text;
     background-clip: transparent;
     -webkit-text-fill-color: transparent;
+
 }
 .fa-linkedin:hover {
     color: blue;
