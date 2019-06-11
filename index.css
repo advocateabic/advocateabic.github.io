@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Rubik');
-@media screen and (max-width: 450px){
+
+@media screen and (max-width: 414px){
     img {
         width: 4em;
         height: 4em;
     }
+    .bodyContainer {
+        text-align: center;
+
+    }
+    .acclaimBadge {
+        padding: 5px;
+        text-align: center;
+    }
 }
+@import url('https://fonts.googleapis.com/css?family=Rubik');
 body {
     display: grid;
     margin: 0;
@@ -17,7 +26,7 @@ body {
 }
 .bodyContainer {
     padding: 5%;
-    float: left;
+    
 }
 .center {
     text-align: center;
@@ -25,9 +34,7 @@ body {
 .floatRight {
     float: right;
 }
-.floatLeft {
-    float: left;
-}
+
 .noWrap {
     word-wrap: none;
 }
@@ -69,7 +76,7 @@ footer {
 }
 .acclaimBadge {
     text-align: center;
-    padding: 4px;
+    padding: 12px;
     border: 2px black solid;
 }
 .networkingFundamentals {
