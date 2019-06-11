@@ -69,8 +69,14 @@ footer {
 }
 .acclaimBadge {
     text-align: center;
+    padding: 4px;
+    border: 2px black solid;
 }
 .networkingFundamentals {
     width: 7em;
     height: 7em;
+}
+.networkingFundamentals:hover {
+    width: 9em;
+    height: 9em;
 }
