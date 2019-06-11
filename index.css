@@ -61,6 +61,7 @@ footer {
     -webkit-background-clip: text;
     background-clip: transparent;
     -webkit-text-fill-color: transparent;
+    margin-right: 4px;
 
 }
 .fa-linkedin:hover {
