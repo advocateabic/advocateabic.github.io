@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
 @media screen and (max-width: 414px){
     img {
         width: 4em;
@@ -13,10 +13,12 @@
         text-align: center;
     }
 }
-@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 body {
+    font-family: 'Heebo', sans-serif;
     display: grid;
     margin: 0;
+    background: linear-gradient(to bottom, #d3cce3, #e9e4f0);
 }
 #page-container {
     position: relative;
