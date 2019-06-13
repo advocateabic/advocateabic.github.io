@@ -38,7 +38,6 @@ body {
 .floatRight {
     float: right;
 }
-
 .noWrap {
     word-wrap: none;
 }
@@ -57,6 +56,21 @@ header {
     -webkit-box-shadow: 0px 8px 24px -15px rgba(0,0,0,1);
     -moz-box-shadow: 0px 8px 24px -15px rgba(0,0,0,1);
     box-shadow: 0px 8px 24px -15px rgba(0,0,0,1);
+}
+.acclaimBadge {
+    text-align: center;
+    padding: 12px;
+    border: 2px black solid;
+    border-radius: 19px;
+    width: 30%;
+}
+.networkingFundamentals {
+    width: 7em;
+    height: 7em;
+}
+.networkingFundamentals:hover {
+    width: 9em;
+    height: 9em;
 }
 footer {
     position: absolute;
@@ -78,17 +92,4 @@ footer {
 }
 .fa-linkedin:hover {
     color: blue;
-}
-.acclaimBadge {
-    text-align: center;
-    padding: 12px;
-    border: 2px black solid;
-}
-.networkingFundamentals {
-    width: 7em;
-    height: 7em;
-}
-.networkingFundamentals:hover {
-    width: 9em;
-    height: 9em;
 }
