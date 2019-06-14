@@ -25,7 +25,7 @@ body {
     display: grid;
     height: 100vh;
     margin: 0;
-    background-image: url("http://www.onextrapixel.com/wp-content/uploads/2016/07/2-ParticlesRandomMovinginCanvas.jpg");
+    /* background-image: url("http://www.onextrapixel.com/wp-content/uploads/2016/07/2-ParticlesRandomMovinginCanvas.jpg"); */
     scroll-behavior: smooth;
     overflow: scroll;
     color: #f76c6c;
