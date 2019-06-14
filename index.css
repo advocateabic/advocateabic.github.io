@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
+html {
+    font-family: 'Heebo', sans-serif;
+}
 @media screen and (max-width: 414px){
+
     img {
         width: 4em;
         height: 4em;
@@ -19,7 +23,7 @@
 body {
     font-family: 'Heebo', sans-serif;
     display: grid;
-    height: 105vh;
+    height: 100vh;
     margin: 0;
     background-image: url("http://www.onextrapixel.com/wp-content/uploads/2016/07/2-ParticlesRandomMovinginCanvas.jpg");
 
@@ -103,6 +107,7 @@ footer {
 }
 .socialButtons {
     text-align: center;
+    font-size: 1.2em;
 }
 
 .fa-instagram {
@@ -110,7 +115,7 @@ footer {
     -webkit-background-clip: text;
     background-clip: transparent;
     -webkit-text-fill-color: transparent;
-    margin-right: 4px;
+    margin-right: 6px;
 
 }
 .fa-linkedin:hover {
