@@ -71,6 +71,13 @@ body::-webkit-scrollbar {
     justify-content: left;
     margin-left: 10%;
     font-size: 70px;
+    margin-bottom: 3px;
+}
+.sign {
+    margin-top: 0;
+    justify-content: left;
+    margin-left: 10%;
+    font-size: 30px;
 }
 .experience {
     margin-left: 10%;
