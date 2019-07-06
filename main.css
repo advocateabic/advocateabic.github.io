@@ -1,52 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo&display=swap');
-html {
-    font-family: 'Heebo', sans-serif;
-}
-@media screen and (max-width: 414px){
-    img {
-        width: 4em;
-        height: 4em;
-    }
-    .bodyContainer {
-        text-align: center;
-    }
-    header, footer {
-        width: 100vh;
-    }
-    .headSentence {
-        font-size: 60px;
-    }
-    footer {
-        bottom: 0;
-    }
-    /* .acclaimBadge {
-        padding: 5px;
-        text-align: center;
-    } */
-}
-body {
-    font-family: 'Heebo', sans-serif;
-    display: grid;
-    margin: 0;
-    background-image: url("http://www.onextrapixel.com/wp-content/uploads/2016/07/2-ParticlesRandomMovinginCanvas.jpg");
-    scroll-behavior: smooth;
-    overflow: scroll;
-    color: #f76c6c;
-}
-body::-webkit-scrollbar {
-    display: none;
-}
-#page-container {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    min-height: 100vh;
-    max-width: 100%;
-    overflow: hidden;
-}
-.stuff {
-    padding: 5%;
-}
+/*
+CSS values for simple stuff
+*/
 .center {
     text-align: center;
 }
@@ -57,24 +12,75 @@ body::-webkit-scrollbar {
     word-wrap: none;
     white-space: nowrap;
 }
+/*End simple stuff*/
+:root {
+    --lightningBlue: #51d0de;
+    --lightningPurple: #bf4aa8;
+    --brainWhite: #d9d9d9;
+}
+html {
+    font-family: 'Heebo', sans-serif;
+    background: var(--lightningBlue);
+}
+@media screen and (max-width: 414px){
+    img {
+        width: 4em;
+        height: 4em;
+    }
+}
+body {
+    font-family: 'Heebo', sans-serif;
+    display: grid;
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow: scroll;
+    color: var(--lightningPurple);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
 .header {
     top: 0;
     width: 100%;
     height: 60px;
-    -webkit-box-shadow: 0px 8px 24px -15px rgb(255, 0, 0);
-    -moz-box-shadow: 0px 8px 24px -15px rgb(255, 0, 0);
-    box-shadow: 0px 8px 24px -15px rgb(255, 0, 0);
+    -webkit-box-shadow: 0px 8px 24px -15px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 8px 24px -15px rgb(0, 0, 0);
+    box-shadow: 0px 8px 24px -15px rgb(0, 0, 0);
     margin-bottom: 2%;
 }
+    @media screen and (max-width: 414px){
+        .header, .footer {
+            width: 100vh;
+        }
+    }
+
+#page-content {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+}
+    @media screen and (max-width: 414px) {
+        #page-content {
+            min-height: 100vh;
+        }
+    }
 .headSentence {
     justify-content: left;
     margin-left: 10%;
     font-size: 70px;
 }
-.things-i-do {
+.experience {
     margin-left: 10%;
     font-size: 40px;
 }
+    @media screen and (max-width: 414px) {
+        .experience {
+            
+        }
+    }
 /* .acclaimBadge {
     text-align: center;
     padding: 12px;
