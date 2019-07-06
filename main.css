@@ -49,6 +49,10 @@ body::-webkit-scrollbar {
         .header, .footer {
             width: 100vh;
         }
+        .header {
+            visibility: hidden;
+            display: none;
+        }
     }
 #page-content {
     padding: 0;
@@ -73,30 +77,35 @@ body::-webkit-scrollbar {
     font-size: 40px;
 }
     @media screen and (max-width: 414px) {
-        .experience {
-            
-        }
+        
     }
 .socialButtons {
     text-align: center;
     font-size: 1.2em;
     background-color: var(--lightningBlue);
     width: 10%;
-    right: 50;
-    left: 50;
-    height: 110%;
+    margin: 0 auto;
     border-radius: 16px;
+    text-rendering: optimizeLegibility;
 }
     .fa-instagram {
         background: -webkit-linear-gradient(200deg, #d047d1, #ff0000,#ffff00);
         -webkit-background-clip: text;
         background-clip: transparent;
         -webkit-text-fill-color: transparent;
-        margin-right: 6px;
-
     }
     .fa-linkedin:hover {
         color: blue;
+    }
+    .fa-linkedin, .fa-instagram {
+        margin-right: 6px;
+    }
+    @media screen and (max-width: 414px) {
+        .socialButtons {
+            width: 30%;
+            font-size: 1.6em;
+            margin-top: 10%;
+        }
     }
 footer {
     position: absolute;
