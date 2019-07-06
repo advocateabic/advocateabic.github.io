@@ -2,9 +2,6 @@
 /*
 CSS values for simple stuff
 */
-.center {
-    text-align: center;
-}
 .floatRight {
     float: right;
 }
@@ -20,7 +17,7 @@ CSS values for simple stuff
 }
 html {
     font-family: 'Heebo', sans-serif;
-    background: var(--lightningBlue);
+    
 }
 @media screen and (max-width: 414px){
     img {
@@ -53,7 +50,6 @@ body::-webkit-scrollbar {
             width: 100vh;
         }
     }
-
 #page-content {
     padding: 0;
     margin: 0;
@@ -81,41 +77,30 @@ body::-webkit-scrollbar {
             
         }
     }
-/* .acclaimBadge {
+.socialButtons {
     text-align: center;
-    padding: 12px;
-    border: 2px black solid;
-    border-radius: 19px;
-    width: 30%;
+    font-size: 1.2em;
+    background-color: var(--lightningBlue);
+    width: 10%;
+    right: 50;
+    left: 50;
+    height: 110%;
+    border-radius: 16px;
 }
-.networkingFundamentals {
-    width: 7em;
-    height: 7em;
-}
-.networkingFundamentals:hover {
-    width: 9em;
-    height: 9em;
-} */
+    .fa-instagram {
+        background: -webkit-linear-gradient(200deg, #d047d1, #ff0000,#ffff00);
+        -webkit-background-clip: text;
+        background-clip: transparent;
+        -webkit-text-fill-color: transparent;
+        margin-right: 6px;
+
+    }
+    .fa-linkedin:hover {
+        color: blue;
+    }
 footer {
     position: absolute;
     bottom: 0;
     width: 100%;
     border-top: 2px black solid;
-}
-
-.socialButtons {
-    text-align: center;
-    font-size: 1.2em;
-}
-
-.fa-instagram {
-    background: -webkit-linear-gradient(200deg, #d047d1, #ff0000,#ffff00);
-    -webkit-background-clip: text;
-    background-clip: transparent;
-    -webkit-text-fill-color: transparent;
-    margin-right: 6px;
-
-}
-.fa-linkedin:hover {
-    color: blue;
 }
