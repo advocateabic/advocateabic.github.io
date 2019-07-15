@@ -17,7 +17,7 @@ CSS values for simple stuff
 }
 html {
     font-family: 'Heebo', sans-serif;
-    
+
 }
 @media screen and (max-width: 414px){
     img {
@@ -70,21 +70,15 @@ body::-webkit-scrollbar {
 .headSentence {
     justify-content: left;
     margin-left: 10%;
-    font-size: 70px;
+    font-size: 50px;
     margin-bottom: 3px;
-}
-.sign {
-    margin-top: 0;
-    justify-content: left;
-    margin-left: 10%;
-    font-size: 30px;
 }
 .experience {
     margin-left: 10%;
     font-size: 40px;
 }
     @media screen and (max-width: 414px) {
-        
+
     }
 .socialButtons {
     text-align: center;
