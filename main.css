@@ -73,13 +73,23 @@ body::-webkit-scrollbar {
     font-size: 50px;
     margin-bottom: 3px;
 }
-.experience {
+.projects {
     margin-left: 10%;
-    font-size: 40px;
 }
     @media screen and (max-width: 414px) {
-
+        .projects, .headSentence {
+            margin-left: 0 auto;
+        }
     }
+.currentProject {
+    background-color: #49aa5b;
+
+}
+.currentProjectSection {
+    z-index:2;
+    border-radius: 100%:
+    background-image: url('https://github.com/cleanhoover/cleanhoover/blob/master/images/CleanHooverLonger.png');
+}
 .socialButtons {
     text-align: center;
     font-size: 1.2em;
