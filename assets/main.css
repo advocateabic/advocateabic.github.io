@@ -54,6 +54,34 @@ body::-webkit-scrollbar {
             display: none;
         }
     }
+.socialButtons {
+    text-align: center;
+    font-size: 1.2em;
+    background-color: var(--lightningBlue);
+    width: 10%;
+    margin: 0 auto;
+    border-radius: 16px;
+    text-rendering: optimizeLegibility;
+}
+    .fa-instagram {
+        background: -webkit-linear-gradient(200deg, #d047d1, #ff0000,#ffff00);
+        -webkit-background-clip: text;
+        background-clip: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+    .fa-linkedin:hover {
+        color: blue;
+    }
+    .fa-linkedin, .fa-instagram {
+        margin-right: 6px;
+    }
+    @media screen and (max-width: 414px) {
+        .socialButtons {
+            width: 30%;
+            font-size: 1.6em;
+            margin-top: 10%;
+        }
+    }
 #page-content {
     padding: 0;
     margin: 0;
@@ -87,37 +115,10 @@ body::-webkit-scrollbar {
 }
 .currentProjectSection {
     z-index:2;
-    border-radius: 100%:
+    border-radius: 100%;
     background-image: url('https://github.com/cleanhoover/cleanhoover/blob/master/images/CleanHooverLonger.png');
 }
-.socialButtons {
-    text-align: center;
-    font-size: 1.2em;
-    background-color: var(--lightningBlue);
-    width: 10%;
-    margin: 0 auto;
-    border-radius: 16px;
-    text-rendering: optimizeLegibility;
-}
-    .fa-instagram {
-        background: -webkit-linear-gradient(200deg, #d047d1, #ff0000,#ffff00);
-        -webkit-background-clip: text;
-        background-clip: transparent;
-        -webkit-text-fill-color: transparent;
-    }
-    .fa-linkedin:hover {
-        color: blue;
-    }
-    .fa-linkedin, .fa-instagram {
-        margin-right: 6px;
-    }
-    @media screen and (max-width: 414px) {
-        .socialButtons {
-            width: 30%;
-            font-size: 1.6em;
-            margin-top: 10%;
-        }
-    }
+
 footer {
     position: absolute;
     bottom: 0;
