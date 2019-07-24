@@ -13,7 +13,9 @@ CSS values for simple stuff
 :root {
     --lightningBlue: #51d0de;
     --lightningPurple: #bf4aa8;
-    --brainWhite: #d9d9d9;
+    --brainWhite: #C9ABBE;
+    --coolGreen: #94D3A0;
+    --niceTeal: #4A9CBA; 
 }
 html {
     font-family: 'Heebo', sans-serif;
@@ -36,6 +38,7 @@ body {
 body::-webkit-scrollbar {
     display: none;
 }
+
 .navigation {
     top: 0;
     width: 100%;
@@ -82,42 +85,61 @@ body::-webkit-scrollbar {
             margin-top: 10%;
         }
     }
-#page-content {
+#page-content-home {
     padding: 0;
     margin: 0;
     position: relative;
-    min-height: 100vh;
     max-width: 100%;
     overflow: hidden;
+    
 }
     @media screen and (max-width: 414px) {
-        #page-content {
+        #page-content-home {
             min-height: 100vh;
+        }
+    }
+.content-margin {
+    margin-left: 10%;
+}
+    @media screen and (max-width: 414 px) {
+        .content-margin {
+            margin-left: 0;
         }
     }
 .headSentence {
     justify-content: left;
     margin-left: 10%;
     font-size: 50px;
-    margin-bottom: 3px;
+    margin-bottom: 3%;
+}
+.projectIntro {
+    color: var(--niceTeal);
 }
 .projects {
     margin-left: 10%;
+    color: var(--lightningBlue);
+    border-radius: 16px;
+    width: 100vh;
+    display: inline-block;
+    justify-content: space-evenly;
 }
     @media screen and (max-width: 414px) {
         .projects, .headSentence {
             margin-left: 0 auto;
         }
     }
-.currentProject {
-    background-color: #49aa5b;
 
+.cleanHoover {
+    background: var(--coolGreen);
+    text-align: center;
+    border-radius: 16px;
+    color: var(--lightningPurple);
 }
-.currentProjectSection {
-    z-index:2;
+.cleanHoover img {
+    margin-top: 3%;
     border-radius: 100%;
-    background-image: url('https://github.com/cleanhoover/cleanhoover/blob/master/images/CleanHooverLonger.png');
 }
+
 
 footer {
     position: absolute;
