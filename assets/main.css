@@ -112,6 +112,12 @@ body::-webkit-scrollbar {
     font-size: 50px;
     margin-bottom: 3%;
 }
+.introSentence {
+    justify-content: left;
+    margin-left: 10%;
+    font-size:20px;
+    margin-bottom: 3%;
+}
 .projectIntro {
     color: var(--niceTeal);
 }
