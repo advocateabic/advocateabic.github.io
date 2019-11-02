@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
     display: none;
 }
 
-.navigation {
+/* .navigation {
     top: 0;
     width: 100%;
     height: 60px;
@@ -56,7 +56,7 @@ body::-webkit-scrollbar {
             visibility: hidden;
             display: none;
         }
-    }
+    } */
 .socialButtons {
     text-align: center;
     font-size: 1.2em;
