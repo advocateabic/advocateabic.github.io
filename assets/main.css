@@ -163,7 +163,7 @@ body::-webkit-scrollbar {display: none;}
 .thought {
     border-top: solid white;
     border-bottom: solid white;
-    width: 90%;
+    width: 70%;
     margin-left: 10%;
 }
 .date {
@@ -171,7 +171,7 @@ body::-webkit-scrollbar {display: none;}
 }
 .think {
     margin-left: 12%;
-    color: #FF0266;
+    color: whitesmoke;
 }
 @media screen and (max-width: 414px) {
     .date {
@@ -179,6 +179,10 @@ body::-webkit-scrollbar {display: none;}
     }
     .think {
         font-size: .8em;
+        color: #FF0266;
+    }
+    .thought {
+        width: 100%;
     }
 }
 footer {
