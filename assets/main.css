@@ -183,7 +183,7 @@ body::-webkit-scrollbar {display: none;}
         color: #FF0266;
     }
     .thought {
-        width: 100%;
+        width: auto;
     }
 }
 footer {
