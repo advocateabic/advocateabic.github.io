@@ -176,6 +176,7 @@ body::-webkit-scrollbar {display: none;}
 @media screen and (max-width: 414px) {
     .date {
         font-size: .9em;
+        color: white;
     }
     .think {
         font-size: .8em;
