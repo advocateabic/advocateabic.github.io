@@ -37,10 +37,10 @@ body::-webkit-scrollbar {display: none;}
 .centerNav {
     position: relative;
     left: 50%;
-    margin-left: -58px;
+    margin-left: -25px;
 }
 .navButton {
-    padding: 2px;
+    padding: 3px;
     text-align: center;
     border-radius: 9px;
     border-color: var(--lightningBlue);
@@ -53,7 +53,7 @@ body::-webkit-scrollbar {display: none;}
 }
     @media screen and (max-width: 414px) {
         .navbar {
-            margin-bottom: 0;
+            margin-bottom: 0 auto;
         }
     }
 #heart {
@@ -116,7 +116,7 @@ body::-webkit-scrollbar {display: none;}
         .socialButtons {
             width: 35.5%;
             font-size: 1.6em;
-            margin-top: 10%;
+            margin-top: 5%;
         }
     }
 #page-content-home {
