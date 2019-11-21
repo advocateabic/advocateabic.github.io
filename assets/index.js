@@ -8,7 +8,7 @@ function togglediv() {
     div.style.display = "none";
   }
 }
-document.getElementById("toggle-heart").addEventListener('click', function() {
+document.getElementById("toggle-heart").addEventListener('change', function() {
   var love = document.getElementById("text");
   var fireWorks = document.getElementById("pyro");
   if(love.style.display == "none") {
