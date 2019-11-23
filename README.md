@@ -1,2 +1,2 @@
-# Michaelgathara.github.io
+# Website
 Just some pratice using Github
