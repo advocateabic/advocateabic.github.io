@@ -1,11 +1,14 @@
 body {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        margin: 0;
-        height: 100vh;
         background: linear-gradient(135deg, #121721, #000);
         font: 1em verdana, sans-serif;
+   }
+   .top {
+       height: 100vh;
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       margin: 0;
+       font-size: 2em;
    }
     [id='toggle-heart'] {
         position: absolute;
@@ -140,7 +143,7 @@ body {
         width: 24em;
         margin: 0 auto;
         border-right: 2px solid rgba(255,255,255,.75);
-        font-size: 160%;
+        font-size: .8em !important;
         text-align: center;
         white-space: nowrap;
         overflow: hidden;
@@ -384,4 +387,5 @@ body {
       .bottom {
           color: #99cfe0;
           bottom: 0;
+
       }
