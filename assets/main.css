@@ -150,13 +150,11 @@ body::-webkit-scrollbar {
     border-radius: 50%;
 }
 .explanation {
-    font-size: 10px;
+    font-size: 13px;
     margin-left: 10%
 }
 
 .thought {
-    border-top: solid #fff;
-    border-bottom: solid #fff;
     width: 70%;
     margin-left: 10%
 }
