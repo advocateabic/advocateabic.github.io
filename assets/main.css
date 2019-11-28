@@ -174,11 +174,9 @@ body::-webkit-scrollbar {
 @media screen and (max-width:414px) {
     .date {
         font-size: .9em;
-        color: #fff;
     }
     .think {
         font-size: .95em;
-        color: #ff0266;
     }
     .thought {
         width: auto;
