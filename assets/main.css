@@ -4,28 +4,31 @@
     --lightningPurple: #bf4aa8;
     --brainWhite: #C9ABBE;
     --coolGreen: #94D3A0;
-    --niceBlue: #03DAC6
+    --niceBlue: #03DAC6;
 }
 
 html {
     font-family: Heebo, sans-serif;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 button:focus {
-    outline: 0
+    outline: 0;
 }
 
 a,
 u {
     text-decoration: none!important;
-    color: #fff!important
+    color: #fff!important;
 }
-
+.thinkPage a {
+    text-decoration: underline !important;
+    color: greenyellow !important;
+}
 @media screen and (max-width:414px) {
     img {
         width: 4em;
-        height: 4em
+        height: 4em;
     }
 }
 
@@ -35,24 +38,24 @@ body {
     margin: 0;
     overflow: scroll;
     color: #f5f5f5;
-    background: #000
+    background: #000;
 }
 
 body::-webkit-scrollbar {
-    display: none
+    display: none;
 }
 
 .navbar {
     text-align: center;
     margin-bottom: 5px;
     color: #fff;
-    margin-top: 5px
+    margin-top: 5px;
 }
 
 .centerNav {
     position: relative;
     left: 50%;
-    margin-left: -25px
+    margin-left: -25px;
 }
 
 .navButton {
@@ -65,12 +68,12 @@ body::-webkit-scrollbar {
     color: #fff;
     font-size: .9em;
     width: fit-content;
-    float: left
+    float: left;
 }
 
 @media screen and (max-width:414px) {
     .navbar {
-        margin-bottom: 0 auto
+        margin-bottom: 0 auto;
     }
 }
 
@@ -81,30 +84,30 @@ body::-webkit-scrollbar {
     width: 10%;
     margin: 0 auto;
     border-radius: 16px;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
 }
 
 .fa-instagram {
     background: -webkit-linear-gradient(200deg, #d047d1, red, #ff0);
     -webkit-background-clip: text;
     background-clip: transparent;
-    -webkit-text-fill-color: transparent
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-linkedin:hover {
-    color: #00f
+    color: #00f;
 }
 
 .fa-instagram,
 .fa-linkedin {
-    margin-right: 6px
+    margin-right: 6px;
 }
 
 @media screen and (max-width:414px) {
     .socialButtons {
         width: 35.5%;
         font-size: 1.6em;
-        margin-top: 5%
+        margin-top: 5%;
     }
 }
 
@@ -114,12 +117,12 @@ body::-webkit-scrollbar {
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    height: calc(100% + 10px)
+    height: calc(100% + 10px);
 }
 
 @media screen and (max-width:414px) {
     #page-content-home {
-        min-height: 100vh
+        min-height: 100vh;
     }
 }
 
@@ -131,7 +134,7 @@ body::-webkit-scrollbar {
 }
 
 .thinkPage .headSentence {
-    font-size: 40px
+    font-size: 40px;
 }
 
 .introSentence {
@@ -151,34 +154,34 @@ body::-webkit-scrollbar {
 }
 .explanation {
     font-size: 13px;
-    margin-left: 10%
+    margin-left: 10%;
 }
 
 .thought {
     width: 70%;
-    margin-left: 10%
+    margin-left: 10%;
 }
 
 .date {
-    color: var(--niceBlue)
+    color: var(--niceBlue);
 }
 
 .think {
     margin-left: 12%;
-    color: #f5f5f5
+    color: #f5f5f5;
 }
 
 @media screen and (max-width:414px) {
     .date {
         font-size: .9em;
-        color: #fff
+        color: #fff;
     }
     .think {
         font-size: .8em;
-        color: #ff0266
+        color: #ff0266;
     }
     .thought {
-        width: auto
+        width: auto;
     }
 }
 
