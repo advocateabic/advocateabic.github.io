@@ -1,2 +1,2 @@
 # Website
-Just some pratice using Github
+Frontend Pratice
