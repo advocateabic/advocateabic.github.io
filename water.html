@@ -9,14 +9,13 @@
         <!--Link CSS and JS-->
         <link rel="stylesheet" href="/assets/main.css">
         <link rel="icon" href="/images/favicon.ico">
-        <!-- Add CSS for the social media buttons-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- JQuery -->
         <style>
             body {
-                background-color: black;
+                background-image: url("http://sirxemic.github.io/jquery.ripples/img/bg2.jpg");
             }
             p {
-                color: white;
+                color: black;
                 text-align: center;
                 margin-top:10%;
                 font-size: 30px;
@@ -25,6 +24,17 @@
     </head>
     <body>
         <p id="demo"></p>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/ripples.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('body').ripples({
+                    resolution: 512,
+                    dropRadius: 20, //px
+                    perturbance: 0.04,
+                });
+            });
+        </script>
         <script>
             // Set the date we're counting down to
             var countDownDate = new Date("Dec 22, 2019 00:00:00").getTime();
