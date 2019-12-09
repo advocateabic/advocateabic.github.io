@@ -7,15 +7,16 @@
         <meta name="google" content="nositelinkssearchbox,notranslate" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!--Link CSS and JS-->
-        <link rel="stylesheet" href="/assets/main.css">
         <link rel="icon" href="/images/favicon.ico">
         <!-- JQuery -->
         <style>
+
             body {
-                background-image: url("http://sirxemic.github.io/jquery.ripples/img/bg2.jpg");
+                background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw0PDw0PDw8NDQ0NDQ0NDw8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NDg0PDysZFRk3Kzc3NysrNzc3LS0tKy03Kys3LS03LS0tKysrNysrKy0rKysrLSsrKystLSsrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAGBABAQEBAQAAAAAAAAAAAAAAAAEREmH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOHrgaguJhpKCY1EwoKliRQIGIC2pFwA01KSANRMMBUqLgJFTDQaZq6lBZFZigYCwEFATCqAzTGqAmKhoGJIaA0hqaDRWZVAhTFATTSgRUwANMUE0LEwCi4WAQZXAFiWEBcQ1QSKigAAaYRdBMNUBEVQTDFAShUgNQNSgGJpoErSYYAUwBNaQsBWaY0DOrDEwFtTVxcASoQCrKYYABaCRWdalBWcatTQTTFUGVVAU1DANUQFSoSApFgCaLUAxQQEtJDVE1VxmgupKuAAIC1NXABUAKJgDSEASqaQDExVBICgmipgLKIoIGmgoggUSkUaEhQKQwwDUKuAaaYlBYli6ugyulSQC1NakLAIIsoFIYAKCDNhi0ihgKCCVYBVhYyDQzK0KlixKCKiiCUi2oooIgYaWigogFXUUELFQENNSA0iyqDK6WJgFIYAqpoCUUAF0BFxLCAEMTAaEXUGbBaKGGKaCQWoCYqgJoUgEihoMtJQFRdTfAXGV0BMMaTQQLQAlUsAVhdAsJBQTFkNJQVAgKhhgKJpoFSKQDDFATVMQE01oBIqYYAYoCBTQWAlFKAIAlBcMRdBMFNBJV1FwEWUxAVLFASVSwA0hhgAJoNM4upoLIuJKoJoqQDRTQSKmEA0UBNFSAYYaaBioSAaqEAIYYAJaSgVcLSAlhFMA1WQDFiasoJhFUASoDSYIDSGmgYaaAJjQCaqJIC1GgE0NNBTENAsIGAozhIC2iyAJKqYAEMTAaSw1QZ01aAmqYAuJhACUKAmrKYYBFZi6BYmLqaC4YaoJqa0mAGGroJppaSgYuIaBYQTAaGaoGprQDPS9FQFKALAASpABcIACgDK4AJhoA0AKJIAigIqWJAVFhgAlIALhgAWEAFABKSACVQAhgA//9k=");
+                background-size: cover;
             }
             p {
-                color: black;
+                color: white;
                 text-align: center;
                 margin-top:10%;
                 font-size: 30px;
@@ -25,14 +26,11 @@
     <body>
         <p id="demo"></p>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-        <script type="text/javascript" src="/assets/ripples.js"></script>
+        <script type="text/javascript" src="ripples.js"></script>
         <script>
+            $('body').ripples('play');
             $(document).ready(function() {
-                $('body').ripples({
-                    resolution: 512,
-                    dropRadius: 20, //px
-                    perturbance: 0.04,
-                });
+                
             });
         </script>
         <script>
