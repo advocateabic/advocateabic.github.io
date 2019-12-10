@@ -10,53 +10,57 @@
         <link rel="icon" href="/images/favicon.ico">
         <!-- JQuery -->
         <style>
-
-            body {
-                background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw0PDw0PDw8NDQ0NDQ0NDw8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NDg0PDysZFRk3Kzc3NysrNzc3LS0tKy03Kys3LS03LS0tKysrNysrKy0rKysrLSsrKystLSsrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAGBABAQEBAQAAAAAAAAAAAAAAAAEREmH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOHrgaguJhpKCY1EwoKliRQIGIC2pFwA01KSANRMMBUqLgJFTDQaZq6lBZFZigYCwEFATCqAzTGqAmKhoGJIaA0hqaDRWZVAhTFATTSgRUwANMUE0LEwCi4WAQZXAFiWEBcQ1QSKigAAaYRdBMNUBEVQTDFAShUgNQNSgGJpoErSYYAUwBNaQsBWaY0DOrDEwFtTVxcASoQCrKYYABaCRWdalBWcatTQTTFUGVVAU1DANUQFSoSApFgCaLUAxQQEtJDVE1VxmgupKuAAIC1NXABUAKJgDSEASqaQDExVBICgmipgLKIoIGmgoggUSkUaEhQKQwwDUKuAaaYlBYli6ugyulSQC1NakLAIIsoFIYAKCDNhi0ihgKCCVYBVhYyDQzK0KlixKCKiiCUi2oooIgYaWigogFXUUELFQENNSA0iyqDK6WJgFIYAqpoCUUAF0BFxLCAEMTAaEXUGbBaKGGKaCQWoCYqgJoUgEihoMtJQFRdTfAXGV0BMMaTQQLQAlUsAVhdAsJBQTFkNJQVAgKhhgKJpoFSKQDDFATVMQE01oBIqYYAYoCBTQWAlFKAIAlBcMRdBMFNBJV1FwEWUxAVLFASVSwA0hhgAJoNM4upoLIuJKoJoqQDRTQSKmEA0UBNFSAYYaaBioSAaqEAIYYAJaSgVcLSAlhFMA1WQDFiasoJhFUASoDSYIDSGmgYaaAJjQCaqJIC1GgE0NNBTENAsIGAozhIC2iyAJKqYAEMTAaSw1QZ01aAmqYAuJhACUKAmrKYYBFZi6BYmLqaC4YaoJqa0mAGGroJppaSgYuIaBYQTAaGaoGprQDPS9FQFKALAASpABcIACgDK4AJhoA0AKJIAigIqWJAVFhgAlIALhgAWEAFABKSACVQAhgA//9k=");
+            html {
+                height: 100%;
+            }
+            .main {
+                width:100% !important;
+                height:100% !important;
+                overflow: hidden;
+                background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw0PDw0PDw8NDQ0NDQ0NDw8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NDg0PDysZFRk3Kzc3NysrNzc3LS0tKy03Kys3LS03LS0tKysrNysrKy0rKysrLSsrKystLSsrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAGBABAQEBAQAAAAAAAAAAAAAAAAEREmH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOHrgaguJhpKCY1EwoKliRQIGIC2pFwA01KSANRMMBUqLgJFTDQaZq6lBZFZigYCwEFATCqAzTGqAmKhoGJIaA0hqaDRWZVAhTFATTSgRUwANMUE0LEwCi4WAQZXAFiWEBcQ1QSKigAAaYRdBMNUBEVQTDFAShUgNQNSgGJpoErSYYAUwBNaQsBWaY0DOrDEwFtTVxcASoQCrKYYABaCRWdalBWcatTQTTFUGVVAU1DANUQFSoSApFgCaLUAxQQEtJDVE1VxmgupKuAAIC1NXABUAKJgDSEASqaQDExVBICgmipgLKIoIGmgoggUSkUaEhQKQwwDUKuAaaYlBYli6ugyulSQC1NakLAIIsoFIYAKCDNhi0ihgKCCVYBVhYyDQzK0KlixKCKiiCUi2oooIgYaWigogFXUUELFQENNSA0iyqDK6WJgFIYAqpoCUUAF0BFxLCAEMTAaEXUGbBaKGGKaCQWoCYqgJoUgEihoMtJQFRdTfAXGV0BMMaTQQLQAlUsAVhdAsJBQTFkNJQVAgKhhgKJpoFSKQDDFATVMQE01oBIqYYAYoCBTQWAlFKAIAlBcMRdBMFNBJV1FwEWUxAVLFASVSwA0hhgAJoNM4upoLIuJKoJoqQDRTQSKmEA0UBNFSAYYaaBioSAaqEAIYYAJaSgVcLSAlhFMA1WQDFiasoJhFUASoDSYIDSGmgYaaAJjQCaqJIC1GgE0NNBTENAsIGAozhIC2iyAJKqYAEMTAaSw1QZ01aAmqYAuJhACUKAmrKYYBFZi6BYmLqaC4YaoJqa0mAGGroJppaSgYuIaBYQTAaGaoGprQDPS9FQFKALAASpABcIACgDK4AJhoA0AKJIAigIqWJAVFhgAlIALhgAWEAFABKSACVQAhgA//9k=") !important;
                 background-size: cover;
+
             }
             p {
                 color: white;
                 text-align: center;
-                margin-top:10%;
                 font-size: 30px;
             }
         </style>
     </head>
-    <body>
+    <body class="main">
         <p id="demo"></p>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-        <script type="text/javascript" src="ripples.js"></script>
+        <script type="text/javascript" src="jquery.ripples.js"></script>
         <script>
-            $('body').ripples('play');
-            $(document).ready(function() {
-                
+            $('.main').ripples({
+                resolution: 512,
+                dropRadius: 5
             });
+            setInterval(function() {
+                var $el = $('main');
+                var x = Math.random() * $el.outerWidth();
+                var y = Math.random() * $el.outerHeight();
+                var dropRadius = 1;
+                var strength = 0.04 + Math.random() * 0.04;
+
+                $el.ripples('drop', x, y, dropRadius, strength);
+            }, 400);
+            // $(document).ready(function() {
+                
+            // });
         </script>
         <script>
-            // Set the date we're counting down to
             var countDownDate = new Date("Dec 22, 2019 00:00:00").getTime();
-
-            // Update the count down every 1 second
             var x = setInterval(function() {
-
-            // Get today's date and time
             var now = new Date().getTime();
-                
-            // Find the distance between now and the count down date
             var distance = countDownDate - now;
-                
-            // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
             var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-            // Output the result in an element with id="demo"
             document.getElementById("demo").innerHTML = days + "d " + hours + "h "
             + minutes + "m " + seconds + "s ";
-                
-            // If the count down is over, write some text 
             if (distance < 0) {
                 clearInterval(x);
                 document.getElementById("demo").innerHTML = "EXPIRED";
