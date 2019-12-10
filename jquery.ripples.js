@@ -316,7 +316,7 @@ var Ripples = function (el, options) {
 	this.loadImage();
 
 	// Set correct clear color and blend mode (regular alpha blending)
-	gl.clearColor(0, 0, 0, 0);
+	gl.clearColor(.439216, 0.858824, 0.576471, 1);
 	gl.blendFunc(gl.SRC_ALPHA, gl.ONE_MINUS_SRC_ALPHA);
 
 	// Plugin is successfully initialized!
