@@ -41,11 +41,11 @@
                 var $el = $('main');
                 var x = Math.random() * $el.outerWidth();
                 var y = Math.random() * $el.outerHeight();
-                var dropRadius = 1;
+                var dropRadius = 10;
                 var strength = 0.04 + Math.random() * 0.04;
 
                 $el.ripples('drop', x, y, dropRadius, strength);
-            }, 400);
+            }, 200);
             // $(document).ready(function() {
                 
             // });
