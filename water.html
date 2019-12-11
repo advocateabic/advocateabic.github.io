@@ -16,7 +16,8 @@
             .main {
                 width:100% !important;
                 height:100% !important;
-                overflow: hidden;
+                overflow-x: hidden;
+                overflow-y: scroll;
                 background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8PDw0PDw0PDw8NDQ0NDQ0NDw8NDQ0NFREWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0NDg0PDysZFRk3Kzc3NysrNzc3LS0tKy03Kys3LS03LS0tKysrNysrKy0rKysrLSsrKystLSsrKysrK//AABEIAKgBLAMBIgACEQEDEQH/xAAXAAEBAQEAAAAAAAAAAAAAAAAAAQIH/8QAGBABAQEBAQAAAAAAAAAAAAAAAAEREmH/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOHrgaguJhpKCY1EwoKliRQIGIC2pFwA01KSANRMMBUqLgJFTDQaZq6lBZFZigYCwEFATCqAzTGqAmKhoGJIaA0hqaDRWZVAhTFATTSgRUwANMUE0LEwCi4WAQZXAFiWEBcQ1QSKigAAaYRdBMNUBEVQTDFAShUgNQNSgGJpoErSYYAUwBNaQsBWaY0DOrDEwFtTVxcASoQCrKYYABaCRWdalBWcatTQTTFUGVVAU1DANUQFSoSApFgCaLUAxQQEtJDVE1VxmgupKuAAIC1NXABUAKJgDSEASqaQDExVBICgmipgLKIoIGmgoggUSkUaEhQKQwwDUKuAaaYlBYli6ugyulSQC1NakLAIIsoFIYAKCDNhi0ihgKCCVYBVhYyDQzK0KlixKCKiiCUi2oooIgYaWigogFXUUELFQENNSA0iyqDK6WJgFIYAqpoCUUAF0BFxLCAEMTAaEXUGbBaKGGKaCQWoCYqgJoUgEihoMtJQFRdTfAXGV0BMMaTQQLQAlUsAVhdAsJBQTFkNJQVAgKhhgKJpoFSKQDDFATVMQE01oBIqYYAYoCBTQWAlFKAIAlBcMRdBMFNBJV1FwEWUxAVLFASVSwA0hhgAJoNM4upoLIuJKoJoqQDRTQSKmEA0UBNFSAYYaaBioSAaqEAIYYAJaSgVcLSAlhFMA1WQDFiasoJhFUASoDSYIDSGmgYaaAJjQCaqJIC1GgE0NNBTENAsIGAozhIC2iyAJKqYAEMTAaSw1QZ01aAmqYAuJhACUKAmrKYYBFZi6BYmLqaC4YaoJqa0mAGGroJppaSgYuIaBYQTAaGaoGprQDPS9FQFKALAASpABcIACgDK4AJhoA0AKJIAigIqWJAVFhgAlIALhgAWEAFABKSACVQAhgA//9k=") !important;
                 background-size: cover;
                 margin:0;
@@ -26,10 +27,45 @@
                 text-align: center;
                 font-size: 30px;
             }
+            .letterWrapper {
+                padding: 10%;
+            }
+            #letter {
+                visibility: hidden;
+                font-size: 1.2em;
+                color: lightblue;
+                text-align: justify;
+                z-index: 0;
+            }
+            code {
+                color: white;
+            }
         </style>
     </head>
     <body class="main">
         <p id="demo"></p>
+        <div class="letterWrapper">
+            <p id="letter">
+                Three down. Many more to go. I've never been the type of guy to celebrate small things, but in our relationship I would like to make a habit of celebrating those sweet moments even if in the long term they tend to get compressed and diluted. First month I got you a letter you probably still have it somewhere but I had a problem with that letter. It was small and yeah I could probably fit an entire paragraph on there if needed, but then it would look all messy and stuff and then one day I was browsing Twitter on a computer and whenever you like a tweet the little heart like sparkles and it reminded me of you so I was like heck instead of a card how about I take that heart and implement it somehow. A week later, a couple hours staring at my screen and I figured it out. Boom a webpage. They can last forever, you can look at it anywhere in the world, Extremely customizable, etc from there on I decided to name it time just because of how much time it took me to come up with the idea, also because the time we've spent together is just precious and important. There is a reason as to why this one is named Water too(Ask and I'll let you know)and next month....... You'll just have to wait to find out haha.
+                <br></br>
+                Essentially all life on earth requires water to live. So I guess you could say water is the ultimate source of life. And just like water life is very fragile
+            </p>
+            <br></br>
+            <code>
+                Wanna know how the bubbles are generated?<br><br>
+                setInterval(function() {<br>
+                    var $el = $('.main');<br>
+                    var x = Math.random() * $el.outerWidth();<br>
+                    var y = Math.random() * $el.outerHeight();<br>
+                    var dropRadius = 10;<br>
+                    var strength = 0.04 + Math.random() * 0.04;<br>
+    
+                    $el.ripples('drop', x, y, dropRadius, strength);<br>
+                }, 400);<br>
+            </code>
+            <!-- Add button to remove water -->
+        </div>
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
         <script type="text/javascript" src="jquery.ripples.js"></script>
         <script>
@@ -63,7 +99,11 @@
             + minutes + "m " + seconds + "s ";
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("demo").innerHTML = "EXPIRED";
+                var timeCountdown = document.getElementById("demo");
+                var letter = document.getElementById("letter");
+                timeCountdown.style.visibility = "hidden";
+                timeCountdown.style.display = "none";
+                letter.style.visibility = "visible";
             }
             }, 1000);
         </script>
